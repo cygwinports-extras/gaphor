@@ -3,17 +3,19 @@ gaphor
 UML 2.0 compliant modeling environment written in Python
 
 Runtime requirements:
-  cygwin-1.5.19-4
-  gnome-python2-2.10.0-1
-  pydiacanvas-0.14.4-1
-  pygtk2-2.8.4-1
-  python-2.4.1-1
+  cygwin-1.5.24-2
+  gaphas-0.1.2-1
+  pygtk2-2.10.3-1
+  python-2.4.3-1
+  zope-component-3.2.0.2-1
+  zope-exceptions-3.2.0.2
+  zope-interface-3.3.0-1
 
 Build requirements:
-  cygwin-1.5.19-4
-  cygport-0.1.1-1
-  gettext-0.14.1-1
-  python-2.4.1-1
+  cygwin-1.5.24-2
+  cygport-0.3.1-1
+  gettext-0.15-1
+  python-2.4.3-1
 
 Canonical homepage:
   http://gaphor.sourceforge.net/
@@ -24,15 +26,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gaphor-0.8.1-1-src.tar.bz2
+  unpack gaphor-0.9.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  ./gaphor-0.8.1-1.sh all
+  cygport ./gaphor-0.9.2-X.cygport all
 
 This will create:
-  /usr/src/gaphor-0.8.1-1-src.tar.bz2
-  /usr/src/gaphor-0.8.1-1.tar.bz2
+  /usr/src/gaphor-0.9.2-X-src.tar.bz2
+  /usr/src/gaphor-0.9.2-X.tar.bz2
 
 -------------------------------------------
 
@@ -55,9 +57,30 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/gaphor/UML/elementfactory.py
   /usr/lib/python2.4/site-packages/gaphor/UML/elementfactory.pyc
   /usr/lib/python2.4/site-packages/gaphor/UML/elementfactory.pyo
+  /usr/lib/python2.4/site-packages/gaphor/UML/event.py
+  /usr/lib/python2.4/site-packages/gaphor/UML/event.pyc
+  /usr/lib/python2.4/site-packages/gaphor/UML/event.pyo
+  /usr/lib/python2.4/site-packages/gaphor/UML/interfaces.py
+  /usr/lib/python2.4/site-packages/gaphor/UML/interfaces.pyc
+  /usr/lib/python2.4/site-packages/gaphor/UML/interfaces.pyo
   /usr/lib/python2.4/site-packages/gaphor/UML/properties.py
   /usr/lib/python2.4/site-packages/gaphor/UML/properties.pyc
   /usr/lib/python2.4/site-packages/gaphor/UML/properties.pyo
+  /usr/lib/python2.4/site-packages/gaphor/UML/tests/__init__.py
+  /usr/lib/python2.4/site-packages/gaphor/UML/tests/__init__.pyc
+  /usr/lib/python2.4/site-packages/gaphor/UML/tests/__init__.pyo
+  /usr/lib/python2.4/site-packages/gaphor/UML/tests/test_elementfactory.py
+  /usr/lib/python2.4/site-packages/gaphor/UML/tests/test_elementfactory.pyc
+  /usr/lib/python2.4/site-packages/gaphor/UML/tests/test_elementfactory.pyo
+  /usr/lib/python2.4/site-packages/gaphor/UML/tests/test_properties.py
+  /usr/lib/python2.4/site-packages/gaphor/UML/tests/test_properties.pyc
+  /usr/lib/python2.4/site-packages/gaphor/UML/tests/test_properties.pyo
+  /usr/lib/python2.4/site-packages/gaphor/UML/tests/test_uml2.py
+  /usr/lib/python2.4/site-packages/gaphor/UML/tests/test_uml2.pyc
+  /usr/lib/python2.4/site-packages/gaphor/UML/tests/test_uml2.pyo
+  /usr/lib/python2.4/site-packages/gaphor/UML/tests/test_umllex.py
+  /usr/lib/python2.4/site-packages/gaphor/UML/tests/test_umllex.pyc
+  /usr/lib/python2.4/site-packages/gaphor/UML/tests/test_umllex.pyo
   /usr/lib/python2.4/site-packages/gaphor/UML/uml2.py
   /usr/lib/python2.4/site-packages/gaphor/UML/uml2.pyc
   /usr/lib/python2.4/site-packages/gaphor/UML/uml2.pyo
@@ -70,6 +93,51 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/gaphor/__init__.py
   /usr/lib/python2.4/site-packages/gaphor/__init__.pyc
   /usr/lib/python2.4/site-packages/gaphor/__init__.pyo
+  /usr/lib/python2.4/site-packages/gaphor/actions/__init__.py
+  /usr/lib/python2.4/site-packages/gaphor/actions/__init__.pyc
+  /usr/lib/python2.4/site-packages/gaphor/actions/__init__.pyo
+  /usr/lib/python2.4/site-packages/gaphor/actions/diagramactions.py
+  /usr/lib/python2.4/site-packages/gaphor/actions/diagramactions.pyc
+  /usr/lib/python2.4/site-packages/gaphor/actions/diagramactions.pyo
+  /usr/lib/python2.4/site-packages/gaphor/actions/editoractions.py
+  /usr/lib/python2.4/site-packages/gaphor/actions/editoractions.pyc
+  /usr/lib/python2.4/site-packages/gaphor/actions/editoractions.pyo
+  /usr/lib/python2.4/site-packages/gaphor/actions/itemactions.py
+  /usr/lib/python2.4/site-packages/gaphor/actions/itemactions.pyc
+  /usr/lib/python2.4/site-packages/gaphor/actions/itemactions.pyo
+  /usr/lib/python2.4/site-packages/gaphor/actions/mainactions.py
+  /usr/lib/python2.4/site-packages/gaphor/actions/mainactions.pyc
+  /usr/lib/python2.4/site-packages/gaphor/actions/mainactions.pyo
+  /usr/lib/python2.4/site-packages/gaphor/actions/placementactions.py
+  /usr/lib/python2.4/site-packages/gaphor/actions/placementactions.pyc
+  /usr/lib/python2.4/site-packages/gaphor/actions/placementactions.pyo
+  /usr/lib/python2.4/site-packages/gaphor/actions/tests/__init__.py
+  /usr/lib/python2.4/site-packages/gaphor/actions/tests/__init__.pyc
+  /usr/lib/python2.4/site-packages/gaphor/actions/tests/__init__.pyo
+  /usr/lib/python2.4/site-packages/gaphor/actions/tests/test_itemactions.py
+  /usr/lib/python2.4/site-packages/gaphor/actions/tests/test_itemactions.pyc
+  /usr/lib/python2.4/site-packages/gaphor/actions/tests/test_itemactions.pyo
+  /usr/lib/python2.4/site-packages/gaphor/actions/tests/test_placementactions.py
+  /usr/lib/python2.4/site-packages/gaphor/actions/tests/test_placementactions.pyc
+  /usr/lib/python2.4/site-packages/gaphor/actions/tests/test_placementactions.pyo
+  /usr/lib/python2.4/site-packages/gaphor/adapters/__init__.py
+  /usr/lib/python2.4/site-packages/gaphor/adapters/__init__.pyc
+  /usr/lib/python2.4/site-packages/gaphor/adapters/__init__.pyo
+  /usr/lib/python2.4/site-packages/gaphor/adapters/connectors.py
+  /usr/lib/python2.4/site-packages/gaphor/adapters/connectors.pyc
+  /usr/lib/python2.4/site-packages/gaphor/adapters/connectors.pyo
+  /usr/lib/python2.4/site-packages/gaphor/adapters/editors.py
+  /usr/lib/python2.4/site-packages/gaphor/adapters/editors.pyc
+  /usr/lib/python2.4/site-packages/gaphor/adapters/editors.pyo
+  /usr/lib/python2.4/site-packages/gaphor/adapters/tests/__init__.py
+  /usr/lib/python2.4/site-packages/gaphor/adapters/tests/__init__.pyc
+  /usr/lib/python2.4/site-packages/gaphor/adapters/tests/__init__.pyo
+  /usr/lib/python2.4/site-packages/gaphor/adapters/tests/test_connector.py
+  /usr/lib/python2.4/site-packages/gaphor/adapters/tests/test_connector.pyc
+  /usr/lib/python2.4/site-packages/gaphor/adapters/tests/test_connector.pyo
+  /usr/lib/python2.4/site-packages/gaphor/adapters/tests/test_editor.py
+  /usr/lib/python2.4/site-packages/gaphor/adapters/tests/test_editor.pyc
+  /usr/lib/python2.4/site-packages/gaphor/adapters/tests/test_editor.pyo
   /usr/lib/python2.4/site-packages/gaphor/diagram/__init__.py
   /usr/lib/python2.4/site-packages/gaphor/diagram/__init__.pyc
   /usr/lib/python2.4/site-packages/gaphor/diagram/__init__.pyo
@@ -88,9 +156,6 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/gaphor/diagram/association.py
   /usr/lib/python2.4/site-packages/gaphor/diagram/association.pyc
   /usr/lib/python2.4/site-packages/gaphor/diagram/association.pyo
-  /usr/lib/python2.4/site-packages/gaphor/diagram/attribute.py
-  /usr/lib/python2.4/site-packages/gaphor/diagram/attribute.pyc
-  /usr/lib/python2.4/site-packages/gaphor/diagram/attribute.pyo
   /usr/lib/python2.4/site-packages/gaphor/diagram/classifier.py
   /usr/lib/python2.4/site-packages/gaphor/diagram/classifier.pyc
   /usr/lib/python2.4/site-packages/gaphor/diagram/classifier.pyo
@@ -130,6 +195,9 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/gaphor/diagram/flow.py
   /usr/lib/python2.4/site-packages/gaphor/diagram/flow.pyc
   /usr/lib/python2.4/site-packages/gaphor/diagram/flow.pyo
+  /usr/lib/python2.4/site-packages/gaphor/diagram/font.py
+  /usr/lib/python2.4/site-packages/gaphor/diagram/font.pyc
+  /usr/lib/python2.4/site-packages/gaphor/diagram/font.pyo
   /usr/lib/python2.4/site-packages/gaphor/diagram/generalization.py
   /usr/lib/python2.4/site-packages/gaphor/diagram/generalization.pyc
   /usr/lib/python2.4/site-packages/gaphor/diagram/generalization.pyo
@@ -148,15 +216,12 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/gaphor/diagram/interface.py
   /usr/lib/python2.4/site-packages/gaphor/diagram/interface.pyc
   /usr/lib/python2.4/site-packages/gaphor/diagram/interface.pyo
-  /usr/lib/python2.4/site-packages/gaphor/diagram/interfaceicon.py
-  /usr/lib/python2.4/site-packages/gaphor/diagram/interfaceicon.pyc
-  /usr/lib/python2.4/site-packages/gaphor/diagram/interfaceicon.pyo
-  /usr/lib/python2.4/site-packages/gaphor/diagram/itemactions.py
-  /usr/lib/python2.4/site-packages/gaphor/diagram/itemactions.pyc
-  /usr/lib/python2.4/site-packages/gaphor/diagram/itemactions.pyo
-  /usr/lib/python2.4/site-packages/gaphor/diagram/itemtool.py
-  /usr/lib/python2.4/site-packages/gaphor/diagram/itemtool.pyc
-  /usr/lib/python2.4/site-packages/gaphor/diagram/itemtool.pyo
+  /usr/lib/python2.4/site-packages/gaphor/diagram/interfaces.py
+  /usr/lib/python2.4/site-packages/gaphor/diagram/interfaces.pyc
+  /usr/lib/python2.4/site-packages/gaphor/diagram/interfaces.pyo
+  /usr/lib/python2.4/site-packages/gaphor/diagram/items.py
+  /usr/lib/python2.4/site-packages/gaphor/diagram/items.pyc
+  /usr/lib/python2.4/site-packages/gaphor/diagram/items.pyo
   /usr/lib/python2.4/site-packages/gaphor/diagram/klass.py
   /usr/lib/python2.4/site-packages/gaphor/diagram/klass.pyc
   /usr/lib/python2.4/site-packages/gaphor/diagram/klass.pyo
@@ -175,30 +240,48 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/gaphor/diagram/objectnode.py
   /usr/lib/python2.4/site-packages/gaphor/diagram/objectnode.pyc
   /usr/lib/python2.4/site-packages/gaphor/diagram/objectnode.pyo
-  /usr/lib/python2.4/site-packages/gaphor/diagram/operation.py
-  /usr/lib/python2.4/site-packages/gaphor/diagram/operation.pyc
-  /usr/lib/python2.4/site-packages/gaphor/diagram/operation.pyo
   /usr/lib/python2.4/site-packages/gaphor/diagram/package.py
   /usr/lib/python2.4/site-packages/gaphor/diagram/package.pyc
   /usr/lib/python2.4/site-packages/gaphor/diagram/package.pyo
-  /usr/lib/python2.4/site-packages/gaphor/diagram/placementactions.py
-  /usr/lib/python2.4/site-packages/gaphor/diagram/placementactions.pyc
-  /usr/lib/python2.4/site-packages/gaphor/diagram/placementactions.pyo
-  /usr/lib/python2.4/site-packages/gaphor/diagram/placementtool.py
-  /usr/lib/python2.4/site-packages/gaphor/diagram/placementtool.pyc
-  /usr/lib/python2.4/site-packages/gaphor/diagram/placementtool.pyo
-  /usr/lib/python2.4/site-packages/gaphor/diagram/relationship.py
-  /usr/lib/python2.4/site-packages/gaphor/diagram/relationship.pyc
-  /usr/lib/python2.4/site-packages/gaphor/diagram/relationship.pyo
-  /usr/lib/python2.4/site-packages/gaphor/diagram/rotatable.py
-  /usr/lib/python2.4/site-packages/gaphor/diagram/rotatable.pyc
-  /usr/lib/python2.4/site-packages/gaphor/diagram/rotatable.pyo
+  /usr/lib/python2.4/site-packages/gaphor/diagram/style.py
+  /usr/lib/python2.4/site-packages/gaphor/diagram/style.pyc
+  /usr/lib/python2.4/site-packages/gaphor/diagram/style.pyo
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tests/__init__.py
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tests/__init__.pyc
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tests/__init__.pyo
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tests/test_action.py
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tests/test_action.pyc
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tests/test_action.pyo
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tests/test_activitynodes.py
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tests/test_activitynodes.pyc
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tests/test_activitynodes.pyo
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tests/test_association.py
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tests/test_association.pyc
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tests/test_association.pyo
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tests/test_class.py
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tests/test_class.pyc
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tests/test_class.pyo
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tests/test_diagramitem.py
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tests/test_diagramitem.pyc
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tests/test_diagramitem.pyo
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tests/test_handletool.py
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tests/test_handletool.pyc
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tests/test_handletool.pyo
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tests/test_interface.py
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tests/test_interface.pyc
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tests/test_interface.pyo
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tests/test_interfaces.py
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tests/test_interfaces.pyc
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tests/test_interfaces.pyo
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tests/test_style.py
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tests/test_style.pyc
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tests/test_style.pyo
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tool.py
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tool.pyc
+  /usr/lib/python2.4/site-packages/gaphor/diagram/tool.pyo
   /usr/lib/python2.4/site-packages/gaphor/diagram/usecase.py
   /usr/lib/python2.4/site-packages/gaphor/diagram/usecase.pyc
   /usr/lib/python2.4/site-packages/gaphor/diagram/usecase.pyo
-  /usr/lib/python2.4/site-packages/gaphor/diagram/util.py
-  /usr/lib/python2.4/site-packages/gaphor/diagram/util.pyc
-  /usr/lib/python2.4/site-packages/gaphor/diagram/util.pyo
   /usr/lib/python2.4/site-packages/gaphor/event.py
   /usr/lib/python2.4/site-packages/gaphor/event.pyc
   /usr/lib/python2.4/site-packages/gaphor/event.pyo
@@ -229,24 +312,24 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/gaphor/misc/gidlethread.py
   /usr/lib/python2.4/site-packages/gaphor/misc/gidlethread.pyc
   /usr/lib/python2.4/site-packages/gaphor/misc/gidlethread.pyo
+  /usr/lib/python2.4/site-packages/gaphor/misc/ipair.py
+  /usr/lib/python2.4/site-packages/gaphor/misc/ipair.pyc
+  /usr/lib/python2.4/site-packages/gaphor/misc/ipair.pyo
   /usr/lib/python2.4/site-packages/gaphor/misc/logger.py
   /usr/lib/python2.4/site-packages/gaphor/misc/logger.pyc
   /usr/lib/python2.4/site-packages/gaphor/misc/logger.pyo
-  /usr/lib/python2.4/site-packages/gaphor/misc/meta.py
-  /usr/lib/python2.4/site-packages/gaphor/misc/meta.pyc
-  /usr/lib/python2.4/site-packages/gaphor/misc/meta.pyo
   /usr/lib/python2.4/site-packages/gaphor/misc/odict.py
   /usr/lib/python2.4/site-packages/gaphor/misc/odict.pyc
   /usr/lib/python2.4/site-packages/gaphor/misc/odict.pyo
+  /usr/lib/python2.4/site-packages/gaphor/misc/partial.py
+  /usr/lib/python2.4/site-packages/gaphor/misc/partial.pyc
+  /usr/lib/python2.4/site-packages/gaphor/misc/partial.pyo
   /usr/lib/python2.4/site-packages/gaphor/misc/resource.py
   /usr/lib/python2.4/site-packages/gaphor/misc/resource.pyc
   /usr/lib/python2.4/site-packages/gaphor/misc/resource.pyo
   /usr/lib/python2.4/site-packages/gaphor/misc/signal.py
   /usr/lib/python2.4/site-packages/gaphor/misc/signal.pyc
   /usr/lib/python2.4/site-packages/gaphor/misc/signal.pyo
-  /usr/lib/python2.4/site-packages/gaphor/misc/singleton.py
-  /usr/lib/python2.4/site-packages/gaphor/misc/singleton.pyc
-  /usr/lib/python2.4/site-packages/gaphor/misc/singleton.pyo
   /usr/lib/python2.4/site-packages/gaphor/misc/uniqueid.py
   /usr/lib/python2.4/site-packages/gaphor/misc/uniqueid.pyc
   /usr/lib/python2.4/site-packages/gaphor/misc/uniqueid.pyo
@@ -274,24 +357,15 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/gaphor/ui/consolewindow.py
   /usr/lib/python2.4/site-packages/gaphor/ui/consolewindow.pyc
   /usr/lib/python2.4/site-packages/gaphor/ui/consolewindow.pyo
-  /usr/lib/python2.4/site-packages/gaphor/ui/diagramactions.py
-  /usr/lib/python2.4/site-packages/gaphor/ui/diagramactions.pyc
-  /usr/lib/python2.4/site-packages/gaphor/ui/diagramactions.pyo
   /usr/lib/python2.4/site-packages/gaphor/ui/diagramtab.py
   /usr/lib/python2.4/site-packages/gaphor/ui/diagramtab.pyc
   /usr/lib/python2.4/site-packages/gaphor/ui/diagramtab.pyo
   /usr/lib/python2.4/site-packages/gaphor/ui/diagramview.py
   /usr/lib/python2.4/site-packages/gaphor/ui/diagramview.pyc
   /usr/lib/python2.4/site-packages/gaphor/ui/diagramview.pyo
-  /usr/lib/python2.4/site-packages/gaphor/ui/editoractions.py
-  /usr/lib/python2.4/site-packages/gaphor/ui/editoractions.pyc
-  /usr/lib/python2.4/site-packages/gaphor/ui/editoractions.pyo
   /usr/lib/python2.4/site-packages/gaphor/ui/editorwindow.py
   /usr/lib/python2.4/site-packages/gaphor/ui/editorwindow.pyc
   /usr/lib/python2.4/site-packages/gaphor/ui/editorwindow.pyo
-  /usr/lib/python2.4/site-packages/gaphor/ui/mainactions.py
-  /usr/lib/python2.4/site-packages/gaphor/ui/mainactions.pyc
-  /usr/lib/python2.4/site-packages/gaphor/ui/mainactions.pyo
   /usr/lib/python2.4/site-packages/gaphor/ui/mainwindow.py
   /usr/lib/python2.4/site-packages/gaphor/ui/mainwindow.pyc
   /usr/lib/python2.4/site-packages/gaphor/ui/mainwindow.pyo
@@ -307,6 +381,18 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/gaphor/ui/stock.py
   /usr/lib/python2.4/site-packages/gaphor/ui/stock.pyc
   /usr/lib/python2.4/site-packages/gaphor/ui/stock.pyo
+  /usr/lib/python2.4/site-packages/gaphor/ui/tests/__init__.py
+  /usr/lib/python2.4/site-packages/gaphor/ui/tests/__init__.pyc
+  /usr/lib/python2.4/site-packages/gaphor/ui/tests/__init__.pyo
+  /usr/lib/python2.4/site-packages/gaphor/ui/tests/test_diagramtab.py
+  /usr/lib/python2.4/site-packages/gaphor/ui/tests/test_diagramtab.pyc
+  /usr/lib/python2.4/site-packages/gaphor/ui/tests/test_diagramtab.pyo
+  /usr/lib/python2.4/site-packages/gaphor/ui/tests/test_mainwindow.py
+  /usr/lib/python2.4/site-packages/gaphor/ui/tests/test_mainwindow.pyc
+  /usr/lib/python2.4/site-packages/gaphor/ui/tests/test_mainwindow.pyo
+  /usr/lib/python2.4/site-packages/gaphor/ui/tests/test_namespace.py
+  /usr/lib/python2.4/site-packages/gaphor/ui/tests/test_namespace.pyc
+  /usr/lib/python2.4/site-packages/gaphor/ui/tests/test_namespace.pyo
   /usr/lib/python2.4/site-packages/gaphor/ui/toolbox.py
   /usr/lib/python2.4/site-packages/gaphor/ui/toolbox.pyc
   /usr/lib/python2.4/site-packages/gaphor/ui/toolbox.pyo
@@ -319,179 +405,12 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/gaphor/version.py
   /usr/lib/python2.4/site-packages/gaphor/version.pyc
   /usr/lib/python2.4/site-packages/gaphor/version.pyo
-  /usr/lib/python2.4/site-packages/zope/__init__.py
-  /usr/lib/python2.4/site-packages/zope/__init__.pyc
-  /usr/lib/python2.4/site-packages/zope/__init__.pyo
-  /usr/lib/python2.4/site-packages/zope/component/__init__.py
-  /usr/lib/python2.4/site-packages/zope/component/__init__.pyc
-  /usr/lib/python2.4/site-packages/zope/component/__init__.pyo
-  /usr/lib/python2.4/site-packages/zope/component/bbb/__init__.py
-  /usr/lib/python2.4/site-packages/zope/component/bbb/__init__.pyc
-  /usr/lib/python2.4/site-packages/zope/component/bbb/__init__.pyo
-  /usr/lib/python2.4/site-packages/zope/component/bbb/adapter.py
-  /usr/lib/python2.4/site-packages/zope/component/bbb/adapter.pyc
-  /usr/lib/python2.4/site-packages/zope/component/bbb/adapter.pyo
-  /usr/lib/python2.4/site-packages/zope/component/bbb/contextdependent.py
-  /usr/lib/python2.4/site-packages/zope/component/bbb/contextdependent.pyc
-  /usr/lib/python2.4/site-packages/zope/component/bbb/contextdependent.pyo
-  /usr/lib/python2.4/site-packages/zope/component/bbb/exceptions.py
-  /usr/lib/python2.4/site-packages/zope/component/bbb/exceptions.pyc
-  /usr/lib/python2.4/site-packages/zope/component/bbb/exceptions.pyo
-  /usr/lib/python2.4/site-packages/zope/component/bbb/interfaces.py
-  /usr/lib/python2.4/site-packages/zope/component/bbb/interfaces.pyc
-  /usr/lib/python2.4/site-packages/zope/component/bbb/interfaces.pyo
-  /usr/lib/python2.4/site-packages/zope/component/bbb/service.py
-  /usr/lib/python2.4/site-packages/zope/component/bbb/service.pyc
-  /usr/lib/python2.4/site-packages/zope/component/bbb/service.pyo
-  /usr/lib/python2.4/site-packages/zope/component/bbb/servicenames.py
-  /usr/lib/python2.4/site-packages/zope/component/bbb/servicenames.pyc
-  /usr/lib/python2.4/site-packages/zope/component/bbb/servicenames.pyo
-  /usr/lib/python2.4/site-packages/zope/component/bbb/tests/__init__.py
-  /usr/lib/python2.4/site-packages/zope/component/bbb/tests/__init__.pyc
-  /usr/lib/python2.4/site-packages/zope/component/bbb/tests/__init__.pyo
-  /usr/lib/python2.4/site-packages/zope/component/bbb/tests/components.py
-  /usr/lib/python2.4/site-packages/zope/component/bbb/tests/components.pyc
-  /usr/lib/python2.4/site-packages/zope/component/bbb/tests/components.pyo
-  /usr/lib/python2.4/site-packages/zope/component/bbb/tests/placelesssetup.py
-  /usr/lib/python2.4/site-packages/zope/component/bbb/tests/placelesssetup.pyc
-  /usr/lib/python2.4/site-packages/zope/component/bbb/tests/placelesssetup.pyo
-  /usr/lib/python2.4/site-packages/zope/component/bbb/tests/request.py
-  /usr/lib/python2.4/site-packages/zope/component/bbb/tests/request.pyc
-  /usr/lib/python2.4/site-packages/zope/component/bbb/tests/request.pyo
-  /usr/lib/python2.4/site-packages/zope/component/bbb/tests/test_adapter.py
-  /usr/lib/python2.4/site-packages/zope/component/bbb/tests/test_adapter.pyc
-  /usr/lib/python2.4/site-packages/zope/component/bbb/tests/test_adapter.pyo
-  /usr/lib/python2.4/site-packages/zope/component/bbb/tests/test_api.py
-  /usr/lib/python2.4/site-packages/zope/component/bbb/tests/test_api.pyc
-  /usr/lib/python2.4/site-packages/zope/component/bbb/tests/test_api.pyo
-  /usr/lib/python2.4/site-packages/zope/component/bbb/tests/test_service.py
-  /usr/lib/python2.4/site-packages/zope/component/bbb/tests/test_service.pyc
-  /usr/lib/python2.4/site-packages/zope/component/bbb/tests/test_service.pyo
-  /usr/lib/python2.4/site-packages/zope/component/bbb/tests/test_utilityservice.py
-  /usr/lib/python2.4/site-packages/zope/component/bbb/tests/test_utilityservice.pyc
-  /usr/lib/python2.4/site-packages/zope/component/bbb/tests/test_utilityservice.pyo
-  /usr/lib/python2.4/site-packages/zope/component/bbb/utility.py
-  /usr/lib/python2.4/site-packages/zope/component/bbb/utility.pyc
-  /usr/lib/python2.4/site-packages/zope/component/bbb/utility.pyo
-  /usr/lib/python2.4/site-packages/zope/component/factory.py
-  /usr/lib/python2.4/site-packages/zope/component/factory.pyc
-  /usr/lib/python2.4/site-packages/zope/component/factory.pyo
-  /usr/lib/python2.4/site-packages/zope/component/interfaces.py
-  /usr/lib/python2.4/site-packages/zope/component/interfaces.pyc
-  /usr/lib/python2.4/site-packages/zope/component/interfaces.pyo
-  /usr/lib/python2.4/site-packages/zope/component/site.py
-  /usr/lib/python2.4/site-packages/zope/component/site.pyc
-  /usr/lib/python2.4/site-packages/zope/component/site.pyo
-  /usr/lib/python2.4/site-packages/zope/component/testing.py
-  /usr/lib/python2.4/site-packages/zope/component/testing.pyc
-  /usr/lib/python2.4/site-packages/zope/component/testing.pyo
-  /usr/lib/python2.4/site-packages/zope/component/tests.py
-  /usr/lib/python2.4/site-packages/zope/component/tests.pyc
-  /usr/lib/python2.4/site-packages/zope/component/tests.pyo
-  /usr/lib/python2.4/site-packages/zope/deprecation/__init__.py
-  /usr/lib/python2.4/site-packages/zope/deprecation/__init__.pyc
-  /usr/lib/python2.4/site-packages/zope/deprecation/__init__.pyo
-  /usr/lib/python2.4/site-packages/zope/deprecation/deprecation.py
-  /usr/lib/python2.4/site-packages/zope/deprecation/deprecation.pyc
-  /usr/lib/python2.4/site-packages/zope/deprecation/deprecation.pyo
-  /usr/lib/python2.4/site-packages/zope/deprecation/tests.py
-  /usr/lib/python2.4/site-packages/zope/deprecation/tests.pyc
-  /usr/lib/python2.4/site-packages/zope/deprecation/tests.pyo
-  /usr/lib/python2.4/site-packages/zope/exceptions/__init__.py
-  /usr/lib/python2.4/site-packages/zope/exceptions/__init__.pyc
-  /usr/lib/python2.4/site-packages/zope/exceptions/__init__.pyo
-  /usr/lib/python2.4/site-packages/zope/exceptions/_duplicate.py
-  /usr/lib/python2.4/site-packages/zope/exceptions/_duplicate.pyc
-  /usr/lib/python2.4/site-packages/zope/exceptions/_duplicate.pyo
-  /usr/lib/python2.4/site-packages/zope/exceptions/_notfounderror.py
-  /usr/lib/python2.4/site-packages/zope/exceptions/_notfounderror.pyc
-  /usr/lib/python2.4/site-packages/zope/exceptions/_notfounderror.pyo
-  /usr/lib/python2.4/site-packages/zope/exceptions/exceptionformatter.py
-  /usr/lib/python2.4/site-packages/zope/exceptions/exceptionformatter.pyc
-  /usr/lib/python2.4/site-packages/zope/exceptions/exceptionformatter.pyo
-  /usr/lib/python2.4/site-packages/zope/exceptions/interfaces.py
-  /usr/lib/python2.4/site-packages/zope/exceptions/interfaces.pyc
-  /usr/lib/python2.4/site-packages/zope/exceptions/interfaces.pyo
-  /usr/lib/python2.4/site-packages/zope/interface/__init__.py
-  /usr/lib/python2.4/site-packages/zope/interface/__init__.pyc
-  /usr/lib/python2.4/site-packages/zope/interface/__init__.pyo
-  /usr/lib/python2.4/site-packages/zope/interface/_flatten.py
-  /usr/lib/python2.4/site-packages/zope/interface/_flatten.pyc
-  /usr/lib/python2.4/site-packages/zope/interface/_flatten.pyo
-  /usr/lib/python2.4/site-packages/zope/interface/adapter.py
-  /usr/lib/python2.4/site-packages/zope/interface/adapter.pyc
-  /usr/lib/python2.4/site-packages/zope/interface/adapter.pyo
-  /usr/lib/python2.4/site-packages/zope/interface/advice.py
-  /usr/lib/python2.4/site-packages/zope/interface/advice.pyc
-  /usr/lib/python2.4/site-packages/zope/interface/advice.pyo
-  /usr/lib/python2.4/site-packages/zope/interface/common/__init__.py
-  /usr/lib/python2.4/site-packages/zope/interface/common/__init__.pyc
-  /usr/lib/python2.4/site-packages/zope/interface/common/__init__.pyo
-  /usr/lib/python2.4/site-packages/zope/interface/common/idatetime.py
-  /usr/lib/python2.4/site-packages/zope/interface/common/idatetime.pyc
-  /usr/lib/python2.4/site-packages/zope/interface/common/idatetime.pyo
-  /usr/lib/python2.4/site-packages/zope/interface/common/interfaces.py
-  /usr/lib/python2.4/site-packages/zope/interface/common/interfaces.pyc
-  /usr/lib/python2.4/site-packages/zope/interface/common/interfaces.pyo
-  /usr/lib/python2.4/site-packages/zope/interface/common/mapping.py
-  /usr/lib/python2.4/site-packages/zope/interface/common/mapping.pyc
-  /usr/lib/python2.4/site-packages/zope/interface/common/mapping.pyo
-  /usr/lib/python2.4/site-packages/zope/interface/common/sequence.py
-  /usr/lib/python2.4/site-packages/zope/interface/common/sequence.pyc
-  /usr/lib/python2.4/site-packages/zope/interface/common/sequence.pyo
-  /usr/lib/python2.4/site-packages/zope/interface/declarations.py
-  /usr/lib/python2.4/site-packages/zope/interface/declarations.pyc
-  /usr/lib/python2.4/site-packages/zope/interface/declarations.pyo
-  /usr/lib/python2.4/site-packages/zope/interface/document.py
-  /usr/lib/python2.4/site-packages/zope/interface/document.pyc
-  /usr/lib/python2.4/site-packages/zope/interface/document.pyo
-  /usr/lib/python2.4/site-packages/zope/interface/exceptions.py
-  /usr/lib/python2.4/site-packages/zope/interface/exceptions.pyc
-  /usr/lib/python2.4/site-packages/zope/interface/exceptions.pyo
-  /usr/lib/python2.4/site-packages/zope/interface/interface.py
-  /usr/lib/python2.4/site-packages/zope/interface/interface.pyc
-  /usr/lib/python2.4/site-packages/zope/interface/interface.pyo
-  /usr/lib/python2.4/site-packages/zope/interface/interfaces.py
-  /usr/lib/python2.4/site-packages/zope/interface/interfaces.pyc
-  /usr/lib/python2.4/site-packages/zope/interface/interfaces.pyo
-  /usr/lib/python2.4/site-packages/zope/interface/ro.py
-  /usr/lib/python2.4/site-packages/zope/interface/ro.pyc
-  /usr/lib/python2.4/site-packages/zope/interface/ro.pyo
-  /usr/lib/python2.4/site-packages/zope/interface/verify.py
-  /usr/lib/python2.4/site-packages/zope/interface/verify.pyc
-  /usr/lib/python2.4/site-packages/zope/interface/verify.pyo
-  /usr/lib/python2.4/site-packages/zope/testing/__init__.py
-  /usr/lib/python2.4/site-packages/zope/testing/__init__.pyc
-  /usr/lib/python2.4/site-packages/zope/testing/__init__.pyo
-  /usr/lib/python2.4/site-packages/zope/testing/cleanup.py
-  /usr/lib/python2.4/site-packages/zope/testing/cleanup.pyc
-  /usr/lib/python2.4/site-packages/zope/testing/cleanup.pyo
-  /usr/lib/python2.4/site-packages/zope/testing/doctest.py
-  /usr/lib/python2.4/site-packages/zope/testing/doctest.pyc
-  /usr/lib/python2.4/site-packages/zope/testing/doctest.pyo
-  /usr/lib/python2.4/site-packages/zope/testing/doctestunit.py
-  /usr/lib/python2.4/site-packages/zope/testing/doctestunit.pyc
-  /usr/lib/python2.4/site-packages/zope/testing/doctestunit.pyo
-  /usr/lib/python2.4/site-packages/zope/testing/formparser.py
-  /usr/lib/python2.4/site-packages/zope/testing/formparser.pyc
-  /usr/lib/python2.4/site-packages/zope/testing/formparser.pyo
-  /usr/lib/python2.4/site-packages/zope/testing/loggingsupport.py
-  /usr/lib/python2.4/site-packages/zope/testing/loggingsupport.pyc
-  /usr/lib/python2.4/site-packages/zope/testing/loggingsupport.pyo
-  /usr/lib/python2.4/site-packages/zope/testing/loghandler.py
-  /usr/lib/python2.4/site-packages/zope/testing/loghandler.pyc
-  /usr/lib/python2.4/site-packages/zope/testing/loghandler.pyo
-  /usr/lib/python2.4/site-packages/zope/testing/module.py
-  /usr/lib/python2.4/site-packages/zope/testing/module.pyc
-  /usr/lib/python2.4/site-packages/zope/testing/module.pyo
-  /usr/lib/python2.4/site-packages/zope/testing/tests.py
-  /usr/lib/python2.4/site-packages/zope/testing/tests.pyc
-  /usr/lib/python2.4/site-packages/zope/testing/tests.pyo
-  /usr/share/doc/Cygwin/gaphor-0.8.1.README
-  /usr/share/doc/gaphor-0.8.1/AUTHORS
-  /usr/share/doc/gaphor-0.8.1/NEWS
-  /usr/share/doc/gaphor-0.8.1/README
-  /usr/share/doc/gaphor-0.8.1/TODO
+  /usr/share/doc/Cygwin/gaphor-0.9.2.README
+  /usr/share/doc/gaphor-0.9.2/AUTHORS
+  /usr/share/doc/gaphor-0.9.2/COPYING
+  /usr/share/doc/gaphor-0.9.2/NEWS
+  /usr/share/doc/gaphor-0.9.2/README
+  /usr/share/doc/gaphor-0.9.2/TODO
   /usr/share/gaphor/icons.xml
   /usr/share/gaphor/pixmaps/action24.png
   /usr/share/gaphor/pixmaps/activityfinalnode24.png
@@ -575,9 +494,6 @@ Files included in the binary package:
   /usr/share/gaphor/plugins/pngexport/__init__.pyc
   /usr/share/gaphor/plugins/pngexport/__init__.pyo
   /usr/share/gaphor/plugins/pngexport/plugin.xml
-  /usr/share/gaphor/plugins/pngexport/pngexport.py
-  /usr/share/gaphor/plugins/pngexport/pngexport.pyc
-  /usr/share/gaphor/plugins/pngexport/pngexport.pyo
   /usr/share/gaphor/plugins/pynsource/__init__.py
   /usr/share/gaphor/plugins/pynsource/__init__.pyc
   /usr/share/gaphor/plugins/pynsource/__init__.pyo
@@ -601,12 +517,18 @@ Files included in the binary package:
   /usr/share/gaphor/plugins/xmiexport/exportmodel.py
   /usr/share/gaphor/plugins/xmiexport/exportmodel.pyc
   /usr/share/gaphor/plugins/xmiexport/exportmodel.pyo
+  /usr/share/gaphor/plugins/xmiexport/plugin.xml
+  /usr/share/locale/ca/LC_MESSAGES/gaphor.mo
   /usr/share/locale/es/LC_MESSAGES/gaphor.mo
   /usr/share/locale/nl/LC_MESSAGES/gaphor.mo
+  /usr/share/locale/sv/LC_MESSAGES/gaphor.mo
 
 ------------------
 
 Port Notes:
+
+----- version 0.9.2-1 -----
+Version bump.
 
 ----- version 0.8.1-1 -----
 Version bump.

@@ -1,4 +1,4 @@
 category: Graphics Gnome
-requires: cygwin gnome-python2 pydiacanvas pygtk2 python
-sdesc: "UML 2.0 compliant modeling environment written in Python"
-ldesc: "UML 2.0 compliant modeling environment written in Python"
+requires: cygwin gaphas pygobject2 pygtk2 python zope-component zope-exceptions zope-interface
+sdesc: "PyGTK UML 2.0 compliant modeling environment"
+ldesc: "UML 2.0 compliant modeling environment written in Python and PyGTK"
