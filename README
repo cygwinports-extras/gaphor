@@ -4,11 +4,11 @@ UML 2.0 compliant modeling environment written in Python
 
 Runtime requirements:
   cygwin-1.5.24-2
-  python-2.5.1-1
+  python-2.5.1-3
   python-decorator-2.0.1-2
-  python-gaphas-0.1.4-1
-  python-gtk2-2.10.4-2
-  python-kid-0.9.5-1
+  python-gaphas-0.2.0-1
+  python-gtk2-2.10.6-1
+  python-kid-0.9.6-1
   python-zope-component-3.3.99.72749-1
   python-zope-deferredimport-3.4dev-1
   python-zope-event-3.3.0-1
@@ -19,10 +19,10 @@ Runtime requirements:
 
 Build requirements:
   cygwin-1.5.24-2
-  cygport-0.3.1-1
+  cygport-0.3.5-1
   gettext-0.15-1
-  python-2.5.1-1
-  python-setupttools-0.6c5-2
+  python-2.5.1-3
+  python-setupttools-0.6c6-1
 
 Canonical homepage:
   http://gaphor.sourceforge.net/
@@ -33,29 +33,28 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gaphor-0.10.4-X-src.tar.bz2
+  unpack gaphor-0.11.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gaphor-0.10.4-X.cygport all
+  cygport ./gaphor-0.11.0-X.cygport all
 
 This will create:
-  /usr/src/gaphor-0.10.4-X-src.tar.bz2
-  /usr/src/gaphor-0.10.4-X.tar.bz2
+  /usr/src/gaphor-0.11.0-X-src.tar.bz2
+  /usr/src/gaphor-0.11.0-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /usr/bin/gaphor
-  /usr/lib/python2.5/site-packages/gaphor-0.10.4-py2.5.egg-info/PKG-INFO
-  /usr/lib/python2.5/site-packages/gaphor-0.10.4-py2.5.egg-info/SOURCES.txt
-  /usr/lib/python2.5/site-packages/gaphor-0.10.4-py2.5.egg-info/dependency_links.txt
-  /usr/lib/python2.5/site-packages/gaphor-0.10.4-py2.5.egg-info/entry_points.txt
-  /usr/lib/python2.5/site-packages/gaphor-0.10.4-py2.5.egg-info/not-zip-safe
-  /usr/lib/python2.5/site-packages/gaphor-0.10.4-py2.5.egg-info/requires.txt
-  /usr/lib/python2.5/site-packages/gaphor-0.10.4-py2.5.egg-info/top_level.txt
-  /usr/lib/python2.5/site-packages/gaphor/README
+  /usr/lib/python2.5/site-packages/gaphor-0.11.0-py2.5.egg-info/PKG-INFO
+  /usr/lib/python2.5/site-packages/gaphor-0.11.0-py2.5.egg-info/SOURCES.txt
+  /usr/lib/python2.5/site-packages/gaphor-0.11.0-py2.5.egg-info/dependency_links.txt
+  /usr/lib/python2.5/site-packages/gaphor-0.11.0-py2.5.egg-info/entry_points.txt
+  /usr/lib/python2.5/site-packages/gaphor-0.11.0-py2.5.egg-info/not-zip-safe
+  /usr/lib/python2.5/site-packages/gaphor-0.11.0-py2.5.egg-info/requires.txt
+  /usr/lib/python2.5/site-packages/gaphor-0.11.0-py2.5.egg-info/top_level.txt
   /usr/lib/python2.5/site-packages/gaphor/UML/__init__.py
   /usr/lib/python2.5/site-packages/gaphor/UML/__init__.pyc
   /usr/lib/python2.5/site-packages/gaphor/UML/__init__.pyo
@@ -109,33 +108,15 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/gaphor/__init__.py
   /usr/lib/python2.5/site-packages/gaphor/__init__.pyc
   /usr/lib/python2.5/site-packages/gaphor/__init__.pyo
+  /usr/lib/python2.5/site-packages/gaphor/action.py
+  /usr/lib/python2.5/site-packages/gaphor/action.pyc
+  /usr/lib/python2.5/site-packages/gaphor/action.pyo
   /usr/lib/python2.5/site-packages/gaphor/actions/__init__.py
   /usr/lib/python2.5/site-packages/gaphor/actions/__init__.pyc
   /usr/lib/python2.5/site-packages/gaphor/actions/__init__.pyo
-  /usr/lib/python2.5/site-packages/gaphor/actions/diagramactions.py
-  /usr/lib/python2.5/site-packages/gaphor/actions/diagramactions.pyc
-  /usr/lib/python2.5/site-packages/gaphor/actions/diagramactions.pyo
-  /usr/lib/python2.5/site-packages/gaphor/actions/editoractions.py
-  /usr/lib/python2.5/site-packages/gaphor/actions/editoractions.pyc
-  /usr/lib/python2.5/site-packages/gaphor/actions/editoractions.pyo
   /usr/lib/python2.5/site-packages/gaphor/actions/itemactions.py
   /usr/lib/python2.5/site-packages/gaphor/actions/itemactions.pyc
   /usr/lib/python2.5/site-packages/gaphor/actions/itemactions.pyo
-  /usr/lib/python2.5/site-packages/gaphor/actions/mainactions.py
-  /usr/lib/python2.5/site-packages/gaphor/actions/mainactions.pyc
-  /usr/lib/python2.5/site-packages/gaphor/actions/mainactions.pyo
-  /usr/lib/python2.5/site-packages/gaphor/actions/placementactions.py
-  /usr/lib/python2.5/site-packages/gaphor/actions/placementactions.pyc
-  /usr/lib/python2.5/site-packages/gaphor/actions/placementactions.pyo
-  /usr/lib/python2.5/site-packages/gaphor/actions/tests/__init__.py
-  /usr/lib/python2.5/site-packages/gaphor/actions/tests/__init__.pyc
-  /usr/lib/python2.5/site-packages/gaphor/actions/tests/__init__.pyo
-  /usr/lib/python2.5/site-packages/gaphor/actions/tests/test_itemactions.py
-  /usr/lib/python2.5/site-packages/gaphor/actions/tests/test_itemactions.pyc
-  /usr/lib/python2.5/site-packages/gaphor/actions/tests/test_itemactions.pyo
-  /usr/lib/python2.5/site-packages/gaphor/actions/tests/test_placementactions.py
-  /usr/lib/python2.5/site-packages/gaphor/actions/tests/test_placementactions.pyc
-  /usr/lib/python2.5/site-packages/gaphor/actions/tests/test_placementactions.pyo
   /usr/lib/python2.5/site-packages/gaphor/adapters/__init__.py
   /usr/lib/python2.5/site-packages/gaphor/adapters/__init__.pyc
   /usr/lib/python2.5/site-packages/gaphor/adapters/__init__.pyo
@@ -145,6 +126,15 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/gaphor/adapters/editors.py
   /usr/lib/python2.5/site-packages/gaphor/adapters/editors.pyc
   /usr/lib/python2.5/site-packages/gaphor/adapters/editors.pyo
+  /usr/lib/python2.5/site-packages/gaphor/adapters/grouping.py
+  /usr/lib/python2.5/site-packages/gaphor/adapters/grouping.pyc
+  /usr/lib/python2.5/site-packages/gaphor/adapters/grouping.pyo
+  /usr/lib/python2.5/site-packages/gaphor/adapters/propertypages.py
+  /usr/lib/python2.5/site-packages/gaphor/adapters/propertypages.pyc
+  /usr/lib/python2.5/site-packages/gaphor/adapters/propertypages.pyo
+  /usr/lib/python2.5/site-packages/gaphor/adapters/relationships.py
+  /usr/lib/python2.5/site-packages/gaphor/adapters/relationships.pyc
+  /usr/lib/python2.5/site-packages/gaphor/adapters/relationships.pyo
   /usr/lib/python2.5/site-packages/gaphor/adapters/tests/__init__.py
   /usr/lib/python2.5/site-packages/gaphor/adapters/tests/__init__.pyc
   /usr/lib/python2.5/site-packages/gaphor/adapters/tests/__init__.pyo
@@ -157,146 +147,13 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/gaphor/application.py
   /usr/lib/python2.5/site-packages/gaphor/application.pyc
   /usr/lib/python2.5/site-packages/gaphor/application.pyo
-  /usr/lib/python2.5/site-packages/gaphor/data/icons.xml
+  /usr/lib/python2.5/site-packages/gaphor/core.py
+  /usr/lib/python2.5/site-packages/gaphor/core.pyc
+  /usr/lib/python2.5/site-packages/gaphor/core.pyo
   /usr/lib/python2.5/site-packages/gaphor/data/locale/ca/LC_MESSAGES/gaphor.mo
   /usr/lib/python2.5/site-packages/gaphor/data/locale/es/LC_MESSAGES/gaphor.mo
   /usr/lib/python2.5/site-packages/gaphor/data/locale/nl/LC_MESSAGES/gaphor.mo
   /usr/lib/python2.5/site-packages/gaphor/data/locale/sv/LC_MESSAGES/gaphor.mo
-  /usr/lib/python2.5/site-packages/gaphor/data/mainwindow.xml
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/action24.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/activityfinalnode.xcf
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/activityfinalnode24.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/actor24.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/artifact.xcf
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/artifact24.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/assembly-connector.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/assembly-connector.svg
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/association24.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/attribute24.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/class.svg
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/class24.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/comment24.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/commentline24.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/component.xcf
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/component24.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/connector.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/connector.svg
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/controlflow24.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/decisionnode24.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/dependency24.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/diagram16.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/extend24.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/extension24.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/flowfinalnode.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/flowfinalnode.svg
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/forknode.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/forknode.svg
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/generalization24.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/implementation24.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/include24.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/initialnode24.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/interaction.xcf
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/interaction24.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/interface24.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/lifeline.xcf
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/lifeline24.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/logo.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/node.xcf
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/node24.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/objectnode.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/objectnode.svg
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/operation24.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/operations.xcf
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/package.svg
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/package24.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/pointer.xcf
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/pointer24.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/profile24.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/stereotype24.png
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/uml_icons.xcf
-  /usr/lib/python2.5/site-packages/gaphor/data/pixmaps/usecase24.png
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/alignment/__init__.py
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/alignment/__init__.pyc
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/alignment/__init__.pyo
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/alignment/alignment.py
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/alignment/alignment.pyc
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/alignment/alignment.pyo
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/alignment/plugin.xml
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/checkmetamodel/__init__.py
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/checkmetamodel/__init__.pyc
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/checkmetamodel/__init__.pyo
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/checkmetamodel/checkmodel.py
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/checkmetamodel/checkmodel.pyc
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/checkmetamodel/checkmodel.pyo
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/checkmetamodel/checkmodelgui.py
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/checkmetamodel/checkmodelgui.pyc
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/checkmetamodel/checkmodelgui.pyo
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/checkmetamodel/plugin.xml
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/diagramlayout/__init__.py
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/diagramlayout/__init__.pyc
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/diagramlayout/__init__.pyo
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/diagramlayout/plugin.xml
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/diagramlayout/toposort.py
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/diagramlayout/toposort.pyc
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/diagramlayout/toposort.pyo
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/kidexport/__init__.py
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/kidexport/__init__.pyc
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/kidexport/__init__.pyo
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/kidexport/exportmodel.py
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/kidexport/exportmodel.pyc
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/kidexport/exportmodel.pyo
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/kidexport/plugin.xml
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/kidexport/xmi.kid
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/liveobjectbrowser/__init__.py
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/liveobjectbrowser/__init__.pyc
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/liveobjectbrowser/__init__.pyo
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/liveobjectbrowser/browser.py
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/liveobjectbrowser/browser.pyc
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/liveobjectbrowser/browser.pyo
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/liveobjectbrowser/plugin.xml
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/pdfexport/__init__.py
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/pdfexport/__init__.pyc
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/pdfexport/__init__.pyo
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/pdfexport/plugin.xml
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/plugineditor/__init__.py
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/plugineditor/__init__.pyc
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/plugineditor/__init__.pyo
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/plugineditor/plugin.xml
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/plugineditor/plugineditor.py
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/plugineditor/plugineditor.pyc
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/plugineditor/plugineditor.pyo
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/pngexport/__init__.py
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/pngexport/__init__.pyc
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/pngexport/__init__.pyo
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/pngexport/plugin.xml
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/pynsource/__init__.py
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/pynsource/__init__.pyc
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/pynsource/__init__.pyo
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/pynsource/engineer.py
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/pynsource/engineer.pyc
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/pynsource/engineer.pyo
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/pynsource/keywords.py
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/pynsource/keywords.pyc
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/pynsource/keywords.pyo
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/pynsource/plugin.xml
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/pynsource/pynsource.py
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/pynsource/pynsource.pyc
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/pynsource/pynsource.pyo
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/python/__init__.py
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/python/__init__.pyc
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/python/__init__.pyo
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/python/plugin.xml
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/svgexport/__init__.py
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/svgexport/__init__.pyc
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/svgexport/__init__.pyo
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/svgexport/plugin.xml
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/xmiexport/__init__.py
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/xmiexport/__init__.pyc
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/xmiexport/__init__.pyo
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/xmiexport/exportmodel.py
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/xmiexport/exportmodel.pyc
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/xmiexport/exportmodel.pyo
-  /usr/lib/python2.5/site-packages/gaphor/data/plugins/xmiexport/plugin.xml
   /usr/lib/python2.5/site-packages/gaphor/diagram/README
   /usr/lib/python2.5/site-packages/gaphor/diagram/__init__.py
   /usr/lib/python2.5/site-packages/gaphor/diagram/__init__.pyc
@@ -361,9 +218,6 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/gaphor/diagram/generalization.py
   /usr/lib/python2.5/site-packages/gaphor/diagram/generalization.pyc
   /usr/lib/python2.5/site-packages/gaphor/diagram/generalization.pyo
-  /usr/lib/python2.5/site-packages/gaphor/diagram/groupable.py
-  /usr/lib/python2.5/site-packages/gaphor/diagram/groupable.pyc
-  /usr/lib/python2.5/site-packages/gaphor/diagram/groupable.pyo
   /usr/lib/python2.5/site-packages/gaphor/diagram/implementation.py
   /usr/lib/python2.5/site-packages/gaphor/diagram/implementation.pyc
   /usr/lib/python2.5/site-packages/gaphor/diagram/implementation.pyo
@@ -403,6 +257,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/gaphor/diagram/package.py
   /usr/lib/python2.5/site-packages/gaphor/diagram/package.pyc
   /usr/lib/python2.5/site-packages/gaphor/diagram/package.pyo
+  /usr/lib/python2.5/site-packages/gaphor/diagram/simpleitem.py
+  /usr/lib/python2.5/site-packages/gaphor/diagram/simpleitem.pyc
+  /usr/lib/python2.5/site-packages/gaphor/diagram/simpleitem.pyo
   /usr/lib/python2.5/site-packages/gaphor/diagram/style.py
   /usr/lib/python2.5/site-packages/gaphor/diagram/style.pyc
   /usr/lib/python2.5/site-packages/gaphor/diagram/style.pyo
@@ -424,21 +281,24 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/gaphor/diagram/tests/test_diagramitem.py
   /usr/lib/python2.5/site-packages/gaphor/diagram/tests/test_diagramitem.pyc
   /usr/lib/python2.5/site-packages/gaphor/diagram/tests/test_diagramitem.pyo
-  /usr/lib/python2.5/site-packages/gaphor/diagram/tests/test_handletool.py
-  /usr/lib/python2.5/site-packages/gaphor/diagram/tests/test_handletool.pyc
-  /usr/lib/python2.5/site-packages/gaphor/diagram/tests/test_handletool.pyo
+  /usr/lib/python2.5/site-packages/gaphor/diagram/tests/test_flow.py
+  /usr/lib/python2.5/site-packages/gaphor/diagram/tests/test_flow.pyc
+  /usr/lib/python2.5/site-packages/gaphor/diagram/tests/test_flow.pyo
   /usr/lib/python2.5/site-packages/gaphor/diagram/tests/test_interface.py
   /usr/lib/python2.5/site-packages/gaphor/diagram/tests/test_interface.pyc
   /usr/lib/python2.5/site-packages/gaphor/diagram/tests/test_interface.pyo
   /usr/lib/python2.5/site-packages/gaphor/diagram/tests/test_interfaces.py
   /usr/lib/python2.5/site-packages/gaphor/diagram/tests/test_interfaces.pyc
   /usr/lib/python2.5/site-packages/gaphor/diagram/tests/test_interfaces.pyo
+  /usr/lib/python2.5/site-packages/gaphor/diagram/tests/test_simpleitem.py
+  /usr/lib/python2.5/site-packages/gaphor/diagram/tests/test_simpleitem.pyc
+  /usr/lib/python2.5/site-packages/gaphor/diagram/tests/test_simpleitem.pyo
   /usr/lib/python2.5/site-packages/gaphor/diagram/tests/test_style.py
   /usr/lib/python2.5/site-packages/gaphor/diagram/tests/test_style.pyc
   /usr/lib/python2.5/site-packages/gaphor/diagram/tests/test_style.pyo
-  /usr/lib/python2.5/site-packages/gaphor/diagram/tool.py
-  /usr/lib/python2.5/site-packages/gaphor/diagram/tool.pyc
-  /usr/lib/python2.5/site-packages/gaphor/diagram/tool.pyo
+  /usr/lib/python2.5/site-packages/gaphor/diagram/textelement.py
+  /usr/lib/python2.5/site-packages/gaphor/diagram/textelement.pyc
+  /usr/lib/python2.5/site-packages/gaphor/diagram/textelement.pyo
   /usr/lib/python2.5/site-packages/gaphor/diagram/usecase.py
   /usr/lib/python2.5/site-packages/gaphor/diagram/usecase.pyc
   /usr/lib/python2.5/site-packages/gaphor/diagram/usecase.pyo
@@ -454,9 +314,6 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/gaphor/misc/__init__.py
   /usr/lib/python2.5/site-packages/gaphor/misc/__init__.pyc
   /usr/lib/python2.5/site-packages/gaphor/misc/__init__.pyo
-  /usr/lib/python2.5/site-packages/gaphor/misc/action.py
-  /usr/lib/python2.5/site-packages/gaphor/misc/action.pyc
-  /usr/lib/python2.5/site-packages/gaphor/misc/action.pyo
   /usr/lib/python2.5/site-packages/gaphor/misc/aspects.py
   /usr/lib/python2.5/site-packages/gaphor/misc/aspects.pyc
   /usr/lib/python2.5/site-packages/gaphor/misc/aspects.pyo
@@ -484,9 +341,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/gaphor/misc/partial.py
   /usr/lib/python2.5/site-packages/gaphor/misc/partial.pyc
   /usr/lib/python2.5/site-packages/gaphor/misc/partial.pyo
-  /usr/lib/python2.5/site-packages/gaphor/misc/resource.py
-  /usr/lib/python2.5/site-packages/gaphor/misc/resource.pyc
-  /usr/lib/python2.5/site-packages/gaphor/misc/resource.pyo
+  /usr/lib/python2.5/site-packages/gaphor/misc/rattr.py
+  /usr/lib/python2.5/site-packages/gaphor/misc/rattr.pyc
+  /usr/lib/python2.5/site-packages/gaphor/misc/rattr.pyo
   /usr/lib/python2.5/site-packages/gaphor/misc/signal.py
   /usr/lib/python2.5/site-packages/gaphor/misc/signal.pyc
   /usr/lib/python2.5/site-packages/gaphor/misc/signal.pyo
@@ -499,15 +356,96 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/gaphor/parser.py
   /usr/lib/python2.5/site-packages/gaphor/parser.pyc
   /usr/lib/python2.5/site-packages/gaphor/parser.pyo
-  /usr/lib/python2.5/site-packages/gaphor/plugin.py
-  /usr/lib/python2.5/site-packages/gaphor/plugin.pyc
-  /usr/lib/python2.5/site-packages/gaphor/plugin.pyo
+  /usr/lib/python2.5/site-packages/gaphor/plugins/__init__.py
+  /usr/lib/python2.5/site-packages/gaphor/plugins/__init__.pyc
+  /usr/lib/python2.5/site-packages/gaphor/plugins/__init__.pyo
+  /usr/lib/python2.5/site-packages/gaphor/plugins/alignment/__init__.py
+  /usr/lib/python2.5/site-packages/gaphor/plugins/alignment/__init__.pyc
+  /usr/lib/python2.5/site-packages/gaphor/plugins/alignment/__init__.pyo
+  /usr/lib/python2.5/site-packages/gaphor/plugins/checkmetamodel/__init__.py
+  /usr/lib/python2.5/site-packages/gaphor/plugins/checkmetamodel/__init__.pyc
+  /usr/lib/python2.5/site-packages/gaphor/plugins/checkmetamodel/__init__.pyo
+  /usr/lib/python2.5/site-packages/gaphor/plugins/checkmetamodel/checkmodel.py
+  /usr/lib/python2.5/site-packages/gaphor/plugins/checkmetamodel/checkmodel.pyc
+  /usr/lib/python2.5/site-packages/gaphor/plugins/checkmetamodel/checkmodel.pyo
+  /usr/lib/python2.5/site-packages/gaphor/plugins/checkmetamodel/checkmodelgui.py
+  /usr/lib/python2.5/site-packages/gaphor/plugins/checkmetamodel/checkmodelgui.pyc
+  /usr/lib/python2.5/site-packages/gaphor/plugins/checkmetamodel/checkmodelgui.pyo
+  /usr/lib/python2.5/site-packages/gaphor/plugins/diagramlayout/__init__.py
+  /usr/lib/python2.5/site-packages/gaphor/plugins/diagramlayout/__init__.pyc
+  /usr/lib/python2.5/site-packages/gaphor/plugins/diagramlayout/__init__.pyo
+  /usr/lib/python2.5/site-packages/gaphor/plugins/diagramlayout/tests/test_diagramlayout.py
+  /usr/lib/python2.5/site-packages/gaphor/plugins/diagramlayout/tests/test_diagramlayout.pyc
+  /usr/lib/python2.5/site-packages/gaphor/plugins/diagramlayout/tests/test_diagramlayout.pyo
+  /usr/lib/python2.5/site-packages/gaphor/plugins/diagramlayout/toposort.py
+  /usr/lib/python2.5/site-packages/gaphor/plugins/diagramlayout/toposort.pyc
+  /usr/lib/python2.5/site-packages/gaphor/plugins/diagramlayout/toposort.pyo
+  /usr/lib/python2.5/site-packages/gaphor/plugins/liveobjectbrowser/__init__.py
+  /usr/lib/python2.5/site-packages/gaphor/plugins/liveobjectbrowser/__init__.pyc
+  /usr/lib/python2.5/site-packages/gaphor/plugins/liveobjectbrowser/__init__.pyo
+  /usr/lib/python2.5/site-packages/gaphor/plugins/liveobjectbrowser/browser.py
+  /usr/lib/python2.5/site-packages/gaphor/plugins/liveobjectbrowser/browser.pyc
+  /usr/lib/python2.5/site-packages/gaphor/plugins/liveobjectbrowser/browser.pyo
+  /usr/lib/python2.5/site-packages/gaphor/plugins/pynsource/__init__.py
+  /usr/lib/python2.5/site-packages/gaphor/plugins/pynsource/__init__.pyc
+  /usr/lib/python2.5/site-packages/gaphor/plugins/pynsource/__init__.pyo
+  /usr/lib/python2.5/site-packages/gaphor/plugins/pynsource/engineer.py
+  /usr/lib/python2.5/site-packages/gaphor/plugins/pynsource/engineer.pyc
+  /usr/lib/python2.5/site-packages/gaphor/plugins/pynsource/engineer.pyo
+  /usr/lib/python2.5/site-packages/gaphor/plugins/pynsource/keywords.py
+  /usr/lib/python2.5/site-packages/gaphor/plugins/pynsource/keywords.pyc
+  /usr/lib/python2.5/site-packages/gaphor/plugins/pynsource/keywords.pyo
+  /usr/lib/python2.5/site-packages/gaphor/plugins/pynsource/pynsource.py
+  /usr/lib/python2.5/site-packages/gaphor/plugins/pynsource/pynsource.pyc
+  /usr/lib/python2.5/site-packages/gaphor/plugins/pynsource/pynsource.pyo
+  /usr/lib/python2.5/site-packages/gaphor/plugins/xmiexport/__init__.py
+  /usr/lib/python2.5/site-packages/gaphor/plugins/xmiexport/__init__.pyc
+  /usr/lib/python2.5/site-packages/gaphor/plugins/xmiexport/__init__.pyo
+  /usr/lib/python2.5/site-packages/gaphor/plugins/xmiexport/exportmodel.py
+  /usr/lib/python2.5/site-packages/gaphor/plugins/xmiexport/exportmodel.pyc
+  /usr/lib/python2.5/site-packages/gaphor/plugins/xmiexport/exportmodel.pyo
   /usr/lib/python2.5/site-packages/gaphor/services/__init__.py
   /usr/lib/python2.5/site-packages/gaphor/services/__init__.pyc
   /usr/lib/python2.5/site-packages/gaphor/services/__init__.pyo
-  /usr/lib/python2.5/site-packages/gaphor/services/pluginmanager.py
-  /usr/lib/python2.5/site-packages/gaphor/services/pluginmanager.pyc
-  /usr/lib/python2.5/site-packages/gaphor/services/pluginmanager.pyo
+  /usr/lib/python2.5/site-packages/gaphor/services/actionmanager.py
+  /usr/lib/python2.5/site-packages/gaphor/services/actionmanager.pyc
+  /usr/lib/python2.5/site-packages/gaphor/services/actionmanager.pyo
+  /usr/lib/python2.5/site-packages/gaphor/services/adapterloader.py
+  /usr/lib/python2.5/site-packages/gaphor/services/adapterloader.pyc
+  /usr/lib/python2.5/site-packages/gaphor/services/adapterloader.pyo
+  /usr/lib/python2.5/site-packages/gaphor/services/copyservice.py
+  /usr/lib/python2.5/site-packages/gaphor/services/copyservice.pyc
+  /usr/lib/python2.5/site-packages/gaphor/services/copyservice.pyo
+  /usr/lib/python2.5/site-packages/gaphor/services/diagramexportmanager.py
+  /usr/lib/python2.5/site-packages/gaphor/services/diagramexportmanager.pyc
+  /usr/lib/python2.5/site-packages/gaphor/services/diagramexportmanager.pyo
+  /usr/lib/python2.5/site-packages/gaphor/services/filemanager.py
+  /usr/lib/python2.5/site-packages/gaphor/services/filemanager.pyc
+  /usr/lib/python2.5/site-packages/gaphor/services/filemanager.pyo
+  /usr/lib/python2.5/site-packages/gaphor/services/guimanager.py
+  /usr/lib/python2.5/site-packages/gaphor/services/guimanager.pyc
+  /usr/lib/python2.5/site-packages/gaphor/services/guimanager.pyo
+  /usr/lib/python2.5/site-packages/gaphor/services/helpservice.py
+  /usr/lib/python2.5/site-packages/gaphor/services/helpservice.pyc
+  /usr/lib/python2.5/site-packages/gaphor/services/helpservice.pyo
+  /usr/lib/python2.5/site-packages/gaphor/services/properties.py
+  /usr/lib/python2.5/site-packages/gaphor/services/properties.pyc
+  /usr/lib/python2.5/site-packages/gaphor/services/properties.pyo
+  /usr/lib/python2.5/site-packages/gaphor/services/tests/test_actionmanager.py
+  /usr/lib/python2.5/site-packages/gaphor/services/tests/test_actionmanager.pyc
+  /usr/lib/python2.5/site-packages/gaphor/services/tests/test_actionmanager.pyo
+  /usr/lib/python2.5/site-packages/gaphor/services/tests/test_copyservice.py
+  /usr/lib/python2.5/site-packages/gaphor/services/tests/test_copyservice.pyc
+  /usr/lib/python2.5/site-packages/gaphor/services/tests/test_copyservice.pyo
+  /usr/lib/python2.5/site-packages/gaphor/services/tests/test_diagramexportmanager.py
+  /usr/lib/python2.5/site-packages/gaphor/services/tests/test_diagramexportmanager.pyc
+  /usr/lib/python2.5/site-packages/gaphor/services/tests/test_diagramexportmanager.pyo
+  /usr/lib/python2.5/site-packages/gaphor/services/tests/test_filemanager.py
+  /usr/lib/python2.5/site-packages/gaphor/services/tests/test_filemanager.pyc
+  /usr/lib/python2.5/site-packages/gaphor/services/tests/test_filemanager.pyo
+  /usr/lib/python2.5/site-packages/gaphor/services/tests/test_properties.py
+  /usr/lib/python2.5/site-packages/gaphor/services/tests/test_properties.pyc
+  /usr/lib/python2.5/site-packages/gaphor/services/tests/test_properties.pyo
   /usr/lib/python2.5/site-packages/gaphor/services/tests/test_undomanager.py
   /usr/lib/python2.5/site-packages/gaphor/services/tests/test_undomanager.pyc
   /usr/lib/python2.5/site-packages/gaphor/services/tests/test_undomanager.pyo
@@ -517,6 +455,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/gaphor/storage.py
   /usr/lib/python2.5/site-packages/gaphor/storage.pyc
   /usr/lib/python2.5/site-packages/gaphor/storage.pyo
+  /usr/lib/python2.5/site-packages/gaphor/tests/test_action.py
+  /usr/lib/python2.5/site-packages/gaphor/tests/test_action.pyc
+  /usr/lib/python2.5/site-packages/gaphor/tests/test_action.pyo
   /usr/lib/python2.5/site-packages/gaphor/tests/test_application.py
   /usr/lib/python2.5/site-packages/gaphor/tests/test_application.pyc
   /usr/lib/python2.5/site-packages/gaphor/tests/test_application.pyo
@@ -530,15 +471,24 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/gaphor/ui/__init__.py
   /usr/lib/python2.5/site-packages/gaphor/ui/__init__.pyc
   /usr/lib/python2.5/site-packages/gaphor/ui/__init__.pyo
-  /usr/lib/python2.5/site-packages/gaphor/ui/abstractwindow.py
-  /usr/lib/python2.5/site-packages/gaphor/ui/abstractwindow.pyc
-  /usr/lib/python2.5/site-packages/gaphor/ui/abstractwindow.pyo
+  /usr/lib/python2.5/site-packages/gaphor/ui/accelmap.py
+  /usr/lib/python2.5/site-packages/gaphor/ui/accelmap.pyc
+  /usr/lib/python2.5/site-packages/gaphor/ui/accelmap.pyo
   /usr/lib/python2.5/site-packages/gaphor/ui/consolewindow.py
   /usr/lib/python2.5/site-packages/gaphor/ui/consolewindow.pyc
   /usr/lib/python2.5/site-packages/gaphor/ui/consolewindow.pyo
+  /usr/lib/python2.5/site-packages/gaphor/ui/diagrampainters.py
+  /usr/lib/python2.5/site-packages/gaphor/ui/diagrampainters.pyc
+  /usr/lib/python2.5/site-packages/gaphor/ui/diagrampainters.pyo
   /usr/lib/python2.5/site-packages/gaphor/ui/diagramtab.py
   /usr/lib/python2.5/site-packages/gaphor/ui/diagramtab.pyc
   /usr/lib/python2.5/site-packages/gaphor/ui/diagramtab.pyo
+  /usr/lib/python2.5/site-packages/gaphor/ui/diagramtoolbox.py
+  /usr/lib/python2.5/site-packages/gaphor/ui/diagramtoolbox.pyc
+  /usr/lib/python2.5/site-packages/gaphor/ui/diagramtoolbox.pyo
+  /usr/lib/python2.5/site-packages/gaphor/ui/diagramtools.py
+  /usr/lib/python2.5/site-packages/gaphor/ui/diagramtools.pyc
+  /usr/lib/python2.5/site-packages/gaphor/ui/diagramtools.pyo
   /usr/lib/python2.5/site-packages/gaphor/ui/diagramview.py
   /usr/lib/python2.5/site-packages/gaphor/ui/diagramview.pyc
   /usr/lib/python2.5/site-packages/gaphor/ui/diagramview.pyo
@@ -548,30 +498,96 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/gaphor/ui/event.py
   /usr/lib/python2.5/site-packages/gaphor/ui/event.pyc
   /usr/lib/python2.5/site-packages/gaphor/ui/event.pyo
+  /usr/lib/python2.5/site-packages/gaphor/ui/groupingtools.py
+  /usr/lib/python2.5/site-packages/gaphor/ui/groupingtools.pyc
+  /usr/lib/python2.5/site-packages/gaphor/ui/groupingtools.pyo
+  /usr/lib/python2.5/site-packages/gaphor/ui/icons.xml
   /usr/lib/python2.5/site-packages/gaphor/ui/interfaces.py
   /usr/lib/python2.5/site-packages/gaphor/ui/interfaces.pyc
   /usr/lib/python2.5/site-packages/gaphor/ui/interfaces.pyo
   /usr/lib/python2.5/site-packages/gaphor/ui/mainwindow.py
   /usr/lib/python2.5/site-packages/gaphor/ui/mainwindow.pyc
   /usr/lib/python2.5/site-packages/gaphor/ui/mainwindow.pyo
-  /usr/lib/python2.5/site-packages/gaphor/ui/menufactory.py
-  /usr/lib/python2.5/site-packages/gaphor/ui/menufactory.pyc
-  /usr/lib/python2.5/site-packages/gaphor/ui/menufactory.pyo
   /usr/lib/python2.5/site-packages/gaphor/ui/namespace.py
   /usr/lib/python2.5/site-packages/gaphor/ui/namespace.pyc
   /usr/lib/python2.5/site-packages/gaphor/ui/namespace.pyo
-  /usr/lib/python2.5/site-packages/gaphor/ui/objectinspector.py
-  /usr/lib/python2.5/site-packages/gaphor/ui/objectinspector.pyc
-  /usr/lib/python2.5/site-packages/gaphor/ui/objectinspector.pyo
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/action24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/activityfinalnode.xcf
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/activityfinalnode24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/actor24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/artifact.xcf
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/artifact24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/assembly-connector.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/assembly-connector.svg
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/association24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/attribute24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/box24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/class.svg
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/class24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/comment24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/commentline24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/component.xcf
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/component24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/connector.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/connector.svg
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/controlflow24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/decisionnode24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/dependency24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/diagram16.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/ellipse24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/extend24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/extension24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/flowfinalnode.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/flowfinalnode.svg
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/forknode.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/forknode.svg
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/generalization24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/implementation24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/include24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/initialnode24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/interaction.xcf
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/interaction24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/interface24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/lifeline.xcf
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/lifeline24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/line24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/logo.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/message24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/node.xcf
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/node24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/objectnode.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/objectnode.svg
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/operation24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/operations.xcf
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/package.svg
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/package24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/pointer.xcf
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/pointer24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/profile24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/stereotype24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/uml_icons.xcf
+  /usr/lib/python2.5/site-packages/gaphor/ui/pixmaps/usecase24.png
+  /usr/lib/python2.5/site-packages/gaphor/ui/propertyeditor.py
+  /usr/lib/python2.5/site-packages/gaphor/ui/propertyeditor.pyc
+  /usr/lib/python2.5/site-packages/gaphor/ui/propertyeditor.pyo
   /usr/lib/python2.5/site-packages/gaphor/ui/stock.py
   /usr/lib/python2.5/site-packages/gaphor/ui/stock.pyc
   /usr/lib/python2.5/site-packages/gaphor/ui/stock.pyo
   /usr/lib/python2.5/site-packages/gaphor/ui/tests/__init__.py
   /usr/lib/python2.5/site-packages/gaphor/ui/tests/__init__.pyc
   /usr/lib/python2.5/site-packages/gaphor/ui/tests/__init__.pyo
+  /usr/lib/python2.5/site-packages/gaphor/ui/tests/test_consolewindow.py
+  /usr/lib/python2.5/site-packages/gaphor/ui/tests/test_consolewindow.pyc
+  /usr/lib/python2.5/site-packages/gaphor/ui/tests/test_consolewindow.pyo
   /usr/lib/python2.5/site-packages/gaphor/ui/tests/test_diagramtab.py
   /usr/lib/python2.5/site-packages/gaphor/ui/tests/test_diagramtab.pyc
   /usr/lib/python2.5/site-packages/gaphor/ui/tests/test_diagramtab.pyo
+  /usr/lib/python2.5/site-packages/gaphor/ui/tests/test_diagramtoolbox.py
+  /usr/lib/python2.5/site-packages/gaphor/ui/tests/test_diagramtoolbox.pyc
+  /usr/lib/python2.5/site-packages/gaphor/ui/tests/test_diagramtoolbox.pyo
+  /usr/lib/python2.5/site-packages/gaphor/ui/tests/test_handletool.py
+  /usr/lib/python2.5/site-packages/gaphor/ui/tests/test_handletool.pyc
+  /usr/lib/python2.5/site-packages/gaphor/ui/tests/test_handletool.pyo
   /usr/lib/python2.5/site-packages/gaphor/ui/tests/test_mainwindow.py
   /usr/lib/python2.5/site-packages/gaphor/ui/tests/test_mainwindow.pyc
   /usr/lib/python2.5/site-packages/gaphor/ui/tests/test_mainwindow.pyo
@@ -581,25 +597,28 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/gaphor/ui/toolbox.py
   /usr/lib/python2.5/site-packages/gaphor/ui/toolbox.pyc
   /usr/lib/python2.5/site-packages/gaphor/ui/toolbox.pyo
+  /usr/lib/python2.5/site-packages/gaphor/ui/toplevelwindow.py
+  /usr/lib/python2.5/site-packages/gaphor/ui/toplevelwindow.pyc
+  /usr/lib/python2.5/site-packages/gaphor/ui/toplevelwindow.pyo
   /usr/lib/python2.5/site-packages/gaphor/ui/wrapbox.py
   /usr/lib/python2.5/site-packages/gaphor/ui/wrapbox.pyc
   /usr/lib/python2.5/site-packages/gaphor/ui/wrapbox.pyo
-  /usr/lib/python2.5/site-packages/gaphor/undomanager.py
-  /usr/lib/python2.5/site-packages/gaphor/undomanager.pyc
-  /usr/lib/python2.5/site-packages/gaphor/undomanager.pyo
-  /usr/share/doc/Cygwin/gaphor-0.10.4.README
-  /usr/share/doc/gaphor-0.10.4/AUTHORS
-  /usr/share/doc/gaphor-0.10.4/COPYING
-  /usr/share/doc/gaphor-0.10.4/ChangeLog
-  /usr/share/doc/gaphor-0.10.4/FAQ
-  /usr/share/doc/gaphor-0.10.4/HACKING
-  /usr/share/doc/gaphor-0.10.4/NEWS
-  /usr/share/doc/gaphor-0.10.4/README
-  /usr/share/doc/gaphor-0.10.4/TODO
+  /usr/share/doc/Cygwin/gaphor-0.11.0.README
+  /usr/share/doc/gaphor-0.11.0/AUTHORS
+  /usr/share/doc/gaphor-0.11.0/COPYING
+  /usr/share/doc/gaphor-0.11.0/ChangeLog
+  /usr/share/doc/gaphor-0.11.0/FAQ
+  /usr/share/doc/gaphor-0.11.0/HACKING
+  /usr/share/doc/gaphor-0.11.0/NEWS
+  /usr/share/doc/gaphor-0.11.0/README
+  /usr/share/doc/gaphor-0.11.0/TODO
 
 ------------------
 
 Port Notes:
+
+----- version 0.11.0-1 -----
+Version bump.
 
 ----- version 0.10.4-1 -----
 Version bump, built for python-2.5.
