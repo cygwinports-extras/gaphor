@@ -7,15 +7,16 @@ Runtime requirements:
   python-2.5.1-3
   python-decorator-2.2.0-1
   python-gaphas-0.3.3-1
+  python-gobject2-2.10.3-2
   python-gtk2-2.10.6-1
   python-kid-0.9.6-1
-  python-zope-component-3.3.99.72749-1
-  python-zope-deferredimport-3.4dev-1
-  python-zope-event-3.3.0-1
-  python-zope-exceptions-3.3.99.73107-1
-  python-zope-interface-3.3.0.1-1
-  python-zope-proxy-3.3.0-1
-  python-zope-testing-3.4-1
+  python-zope-component-3.4.0-1
+  python-zope-deferredimport-3.4.0-1
+  python-zope-event-3.4.0-1
+  python-zope-exceptions-3.4.0-1
+  python-zope-interface-3.4.1-1
+  python-zope-proxy-3.4.0-1
+  python-zope-testing-3.5.1-1
 
 Build requirements:
   cygwin-1.5.24-2
@@ -33,28 +34,28 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gaphor-0.12.2-X-src.tar.bz2
+  unpack gaphor-0.12.4-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gaphor-0.12.2-X.cygport all
+  cygport ./gaphor-0.12.4-X.cygport all
 
 This will create:
-  /usr/src/gaphor-0.12.2-X-src.tar.bz2
-  /usr/src/gaphor-0.12.2-X.tar.bz2
+  /usr/src/gaphor-0.12.4-X-src.tar.bz2
+  /usr/src/gaphor-0.12.4-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /usr/bin/gaphor
-  /usr/lib/python2.5/site-packages/gaphor-0.12.2-py2.5.egg-info/PKG-INFO
-  /usr/lib/python2.5/site-packages/gaphor-0.12.2-py2.5.egg-info/SOURCES.txt
-  /usr/lib/python2.5/site-packages/gaphor-0.12.2-py2.5.egg-info/dependency_links.txt
-  /usr/lib/python2.5/site-packages/gaphor-0.12.2-py2.5.egg-info/entry_points.txt
-  /usr/lib/python2.5/site-packages/gaphor-0.12.2-py2.5.egg-info/not-zip-safe
-  /usr/lib/python2.5/site-packages/gaphor-0.12.2-py2.5.egg-info/requires.txt
-  /usr/lib/python2.5/site-packages/gaphor-0.12.2-py2.5.egg-info/top_level.txt
+  /usr/lib/python2.5/site-packages/gaphor-0.12.4-py2.5.egg-info/PKG-INFO
+  /usr/lib/python2.5/site-packages/gaphor-0.12.4-py2.5.egg-info/SOURCES.txt
+  /usr/lib/python2.5/site-packages/gaphor-0.12.4-py2.5.egg-info/dependency_links.txt
+  /usr/lib/python2.5/site-packages/gaphor-0.12.4-py2.5.egg-info/entry_points.txt
+  /usr/lib/python2.5/site-packages/gaphor-0.12.4-py2.5.egg-info/not-zip-safe
+  /usr/lib/python2.5/site-packages/gaphor-0.12.4-py2.5.egg-info/requires.txt
+  /usr/lib/python2.5/site-packages/gaphor-0.12.4-py2.5.egg-info/top_level.txt
   /usr/lib/python2.5/site-packages/gaphor/UML/__init__.py
   /usr/lib/python2.5/site-packages/gaphor/UML/__init__.pyc
   /usr/lib/python2.5/site-packages/gaphor/UML/__init__.pyo
@@ -607,19 +608,22 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/gaphor/ui/wrapbox.py
   /usr/lib/python2.5/site-packages/gaphor/ui/wrapbox.pyc
   /usr/lib/python2.5/site-packages/gaphor/ui/wrapbox.pyo
-  /usr/share/doc/Cygwin/gaphor-0.12.2.README
-  /usr/share/doc/gaphor-0.12.2/AUTHORS
-  /usr/share/doc/gaphor-0.12.2/COPYING
-  /usr/share/doc/gaphor-0.12.2/ChangeLog
-  /usr/share/doc/gaphor-0.12.2/FAQ
-  /usr/share/doc/gaphor-0.12.2/HACKING
-  /usr/share/doc/gaphor-0.12.2/NEWS
-  /usr/share/doc/gaphor-0.12.2/README
-  /usr/share/doc/gaphor-0.12.2/TODO
+  /usr/share/doc/Cygwin/gaphor-0.12.4.README
+  /usr/share/doc/gaphor-0.12.4/AUTHORS
+  /usr/share/doc/gaphor-0.12.4/COPYING
+  /usr/share/doc/gaphor-0.12.4/ChangeLog
+  /usr/share/doc/gaphor-0.12.4/FAQ
+  /usr/share/doc/gaphor-0.12.4/HACKING
+  /usr/share/doc/gaphor-0.12.4/NEWS
+  /usr/share/doc/gaphor-0.12.4/README
+  /usr/share/doc/gaphor-0.12.4/TODO
 
 ------------------
 
 Port Notes:
+
+----- version 0.12.4-1 -----
+Version bump.
 
 ----- version 0.12.2-1 -----
 Version bump.
