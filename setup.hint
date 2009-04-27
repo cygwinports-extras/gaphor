@@ -1,4 +1,4 @@
-category: Graphics Gnome
-requires: cygwin python python-gaphas python-gobject2 python-gtk2 python-kid python-zope-component python-zope-deferredimport python-zope-event python-zope-exceptions python-zope-interface python-zope-proxy python-zope-testing
+category: Devel Gnome
+requires: python python-cairo python-gaphas python-gobject2 python-gtk2 python-zope-component python-zope-interface
 sdesc: "PyGTK UML 2.0 compliant modeling environment"
 ldesc: "UML 2.0 compliant modeling environment written in Python and PyGTK"
