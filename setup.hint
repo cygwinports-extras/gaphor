@@ -1,4 +1,4 @@
 category: Devel Gnome
-requires: python python-cairo python-gaphas python-gobject2 python-gtk2 python-zope-component python-zope-interface
+requires: python python-cairo python-gaphas python-gobject2.0 python-gtk2.0 python-simplegeneric python-zope.component python-zope.interface
 sdesc: "PyGTK UML 2.0 compliant modeling environment"
 ldesc: "UML 2.0 compliant modeling environment written in Python and PyGTK"
