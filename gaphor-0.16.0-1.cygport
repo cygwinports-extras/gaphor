@@ -1,6 +1,0 @@
-ORIG_PN="${PN}"
-
-inherit distutils
-
-DESCRIPTION="GNOME diagram modelling tool"
-HOMEPAGE="http://gaphor.sourceforge.net/"

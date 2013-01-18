@@ -1,0 +1,11 @@
+inherit distutils
+
+NAME="gaphor"
+VERSION=0.17.1
+RELEASE=1
+CATEGORY="Devel GNOME"
+SUMMARY="GNOME UML modeling tool"
+DESCRIPTION="UML 2.0 compliant modeling environment written in Python and PyGTK"
+HOMEPAGE="http://gaphor.sourceforge.net/"
+
+PATCH_URI="0.17.1-zope-component-registry.patch"

@@ -1,0 +1,21 @@
+https://groups.google.com/d/topic/gaphor-dev/vxPuQAn2Kh4/discussion
+
+--- origsrc/gaphor-0.17.1/gaphor/services/componentregistry.py	2011-03-17 07:51:08.000000000 -0500
++++ src/gaphor-0.17.1/gaphor/services/componentregistry.py	2013-01-17 21:04:08.929105200 -0600
+@@ -7,6 +7,7 @@ unregister_handler, handle), a AdapterRe
+ """
+ 
+ from zope import interface, component
++from zope.component import registry
+ from gaphor.core import inject
+ from gaphor.interfaces import IService, IEventFilter
+ 
+@@ -27,7 +28,7 @@ class ZopeComponentRegistry(object):
+         pass
+ 
+     def init(self, app):
+-        self._components = component.registry.Components(
++        self._components = registry.Components(
+                                name='component_registry',
+                                bases=(component.getGlobalSiteManager(),))
+ 
